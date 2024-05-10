@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Guardian</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+        }
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            margin-top: 50px;
+            animation: fadeIn 1s ease;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            animation: slideIn 1s ease;
+        }
+
+        .feature {
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            animation: pulse 2s infinite alternate; /* High-level animation */
+        }
+
+        .feature:hover {
+            transform: scale(1.1); /* Scale up on hover */
+        }
+
+        .icon {
+            font-size: 36px;
+            color: #fff; /* White icon */
+        }
+
+        .text {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Cyber Guardian</div>
+    <nav class="navbar">
+        <div class="feature">
+            <i class="icon fas fa-envelope"></i>
+            <div class="text">Complaint Form</div>
+        </div>
+        <div class="feature">
+            <i class="icon fas fa-tasks"></i>
+            <div class="text">Complaint Tracking</div>
+        </div>
+        <div class="feature">
+            <i class="icon fas fa-money-check-alt"></i>
+            <div class="text">Recover Frozen Funds</div>
+        </div>
+        <div class="feature">
+            <i class="icon fas fa-search-dollar"></i>
+            <div class="text">Track Frozen Funds</div>
+        </div>
+        <div class="feature">
+            <i class="icon fas fa-question-circle"></i>
+            <div class="text">Get Guidance</div>
+        </div>
+        <div class="feature">
+            <i class="icon fas fa-users"></i>
+            <div class="text">Community Forum</div>
+        </div>
+    </nav>
+
+    <!-- Other content of your website goes here -->
+
+    <script src="script.js"></script>
+</body>
+</html>
